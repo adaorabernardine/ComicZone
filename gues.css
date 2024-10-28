@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Dela+Gothic+One&display=swap');
+
+*{  
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+    
+    html,
+    body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+    .guesglobalContainer{
+        /* border: 1px solid red; */
+        font-family: "Protest Strike", sans-serif;
+        display: flex;
+        background-color: white;
+        position: sticky;
+        top: 0px;
+        justify-content: space-between;
+        align-items:center;
+    }
+    @media  screen and (max-width: 768px){
+        .guesglobalContainer{
+            margin: 0px;
+        }
+
+
+    }
+    
+    
+    /* here you style the logo */
+
+    .guesglobalContainer .logo {
+        width: 50%;
+        margin: 30px 20px;
+        
+    }
+    @media  screen and (max-width: 768px){
+        .guesglobalContainer .logo {
+            border: 1px solid red;
+            width: 20%;
+            margin:20px 0px;
+    
+  }
+  }
+  
+  
+
+
+.guesglobalContainer .logo h1{
+
+    /* border: 1px solid red; */
+    color: yellow;
+    font-weight: 900;
+    font-size: 40px;
+    /* transition-property: font-size; */
+    transition: color 0.5s, font-size 1s;
+    /* transition-delay: 0.1s;
+    transition-duration: 0.5s;
+    transition-timing-function:ease-in; */
+    
+}
+@media  screen and (max-width: 768px){
+    .guesglobalContainer .logo h1{
+        font-weight: 700;
+        font-size: 30px;
+        
+        
+    }
+}
+.guesglobalContainer .logo h1:hover{
+    font-size: 80px;
+    color: green;
+    letter-spacing: 10px;
+}
+@media  screen and (max-width: 768px){
+    .guesglobalContainer .logo h1:hover{
+        letter-spacing: 0px;
+        
+    }
+
+
+}
+@media  screen and (max-width: 768px){
+    .guesglobalContainer .logo h1:hover{
+        font-size: 40px;
+        
+    }
+}
+
+.guesglobalContainer .logo h1 b{
+    /* border: 1px solid red; */
+    color: red;
+    font-size: 60px;
+}
+@media  screen and (max-width: 768px){
+    .guesglobalContainer .logo h1 b{
+        font-size: 40px;
+
+    }
+
+}
+    
+    /* styling the input  */
+    
+    .input{
+        /* border: 1px solid red; */
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 20px;
+        
+    }
+    @media  screen and (max-width: 768px){
+        .input{
+            width: 30%;
+
+        }
+        
+    }
+    
+        
+    input[type="search"]{
+        width: 550px;
+        margin: 10px;
+        padding: 20px;
+        /* border: 1px solid red; */
+        background-color: #f5f5f5;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        
+    }
+    @media  screen and (max-width: 768px){
+        input[type="search"]{
+            display: none;
+            
+        }
+        
+    }
+    
+    .element {
+        animation: shake 0.5s ease-in-out infinite;
+    }
+    
+    
+    /* Apply the animation to the .box element */
+   
+    .circle{
+        /* border: 1px solid red; */
+        width: 100px;
+        height: 100px;
+        border-radius: 30px;
+        background-color:yellow;
+        border: black;
+        position: relative;
+        text-align: center;
+        margin: 30px 20px;
+        /* Apply the animation */
+        animation: moveRight 2s ease-in-out infinite alternate;
+    }
+    @media  screen and (max-width: 768px){
+        .circle{
+            display: none;
+        }
+        
+}
+
+.circle p{
+    text-align: center;
+    color: red;
+    padding: 20px;
+}
+
+@keyframes moveRight{
+  from{width: 100px, width 50px, background red;}
+  
+}
+
+
+
+/* the second container begins here */
+
+.gues2ndGlobalcontainer{
+    /* border: 1px solid red; */
+    margin: 100px 0PX 0PX 0PX;
+}
+
+.gues2ndGlobalcontainer .heroes{
+    /* border: 1px solid red; */
+    text-align: center;
+    font-size: 70PX;
+    font-weight:900;
+    font-family: "Luckiest Guy", cursive;
+}
+
+
+@media  screen and (max-width: 768px){
+        .gues2ndGlobalcontainer .heroes{
+            font-size: 35PX;
+        }
+    }
+    .digital{
+        /* border: 1px solid red; */
+        text-align: center;
+        font-family: "Caveat", cursive;
+    }
+
+   .comic-button{
+    /* border: 1px solid red; */
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ff207e;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    border-radius: 25px;
+    color: white;
+    outline: none;
+    border: none;
+   } 
+
+.comic-panel{
+    display: flex;
+    justify-content: center;
+    /* width: 100px; */
+    padding: 20px;
+}
+
+
+.gues3rdsGlobalcontainer{
+    border-bottom: 2px solid black;
+    margin-bottom: 100px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+@media  screen and (max-width: 768px){
+    .gues3rdsGlobalcontainer{
+        border: 2px solid solid black;
+        margin-bottom: 20px;
+        /* height: 100px; */
+    
+    }
+}
+
+.gues3rdsGlobalcontainer .image {
+    background-color:#fffdea;
+    border-right: 2px solid black;
+    width: 50%;
+    padding: 60px 20px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    padding-right: 30px;
+     
+}
+@media  screen and (max-width: 768px){
+    .gues3rdsGlobalcontainer .image {
+        background-color:#fffdea;
+        border-right: 2px solid black;
+        width: 50%;
+        padding: 60px 30px;
+        display: flex;
+        justify-content: center;
+        padding-right: 30px;
+        
+    }
+}
+   
+.gues3rdsGlobalcontainer .image .imageinner{
+    border: 1px solid red;
+    width: 600px;
+    background-color: yellow;
+    margin: 20px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 20px 30px 30px rgba(0, 0, 0, 5);
+    /* background-color: black; */
+}
+
+@media  screen and (max-width: 768px){
+    .gues3rdsGlobalcontainer .image .imageinner{
+        /* padding: 40px; */
+        margin: 40px;
+
+    }
+
+}
+
+.gues3rdsGlobalcontainer .image img{
+    box-shadow: black;
+    object-fit: cover;
+    width: 500px;
+    height: 70vh;
+    margin: 0px auto;
+    display: flex;justify-content: center;
+    
+    
+}
+@media  screen and (max-width: 768px){
+    .gues3rdsGlobalcontainer .image img{
+        box-shadow: black;
+        object-fit: contain;
+        width: 500px;
+        height: 70vh;
+        margin: 0px auto;
+        display: flex;justify-content: center;
+        
+        
+    }
+
+}
+.gues3rdsGlobalcontainer  .price1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gues3rdsGlobalcontainer .price{
+    font-size: 30px;
+    font-weight: 800;
+    margin: 20px;
+}
+
+.gues3rdsGlobalcontainer .price1 .tag{
+    margin: 50px ;
+    /* border: 1px solid red; */
+
+}
+
+.gues3rdsGlobalcontainer a{
+    /* border: 1px solid red; */
+    margin: auto ;
+    /* display: flex; */
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    background-color: red;
+    transition: 0.5;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    border-radius: 25px;
+} 
+
+
+.gues3rdsGlobalcontainer .text{
+    width: 50%;
+    /* text-align: center; */
+    text-justify: auto;
+    background-color: #fffbce;
+    padding: 40px 20px;
+    height: 150vh;
+}
+.gues3rdsGlobalcontainer .text .date{
+    /* border: 1px solid red; */
+    margin: 70x ;
+    font-family: "Akaya Kanadaka", system-ui;
+    padding: 90px 0px 40px 0px;
+}
+.gues3rdsGlobalcontainer .text h1{
+    font-size: 30px;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 800;
+}
+.gues3rdsGlobalcontainer .text .describe{
+    /* border: 1px solid red; */
+    padding: 20px 0px;
+    font-family: "Akaya Kanadaka", system-ui;
+}
+.gues3rdsGlobalcontainer .text .deadly{
+    font-family: "Akaya Kanadaka", system-ui;
+}
+
+/* styling of the landing page */
+.guesGloballandingPage{
+    background-color: black;
+    margin: 30px 0px;
+    padding: 30px 0px;
+}
+
+.gueslandingPage{ 
+    display: flex;
+    justify-content: space-between;
+    /* margin: 30px; */
+    padding: 20px;
+    border-radius: 15px;
+    background-color: black;
+}
+
+
+
+
+.gueslandingPage .logo2{
+    /* border: 1px solid white; */
+    color: yellow;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: "Protest Strike", sans-serif;
+    transition: color 0.5s, font-size 1s;
+
+}
+
+.gueslandingPage .logo2:hover{
+    font-size: 70px;
+    color: green;
+    letter-spacing: 10px;
+}
+
+
+.gueslandingPage .logo2 h1 b{
+    font-family: "Protest Strike", sans-serif;
+    color: red;
+    font-size: 60px;
+
+}
+
+/* .gueslandingPage .logo2 h1:hover{
+    font-size: 70px;
+    color: green;
+} */
+
+.gueslandingPage .logo2text{
+    /* border: 1px solid red; */
+    color: white;
+    font-family: "Akaya Kanadaka", system-ui;
+}
+
+
+.gueslandingPage .logo2links{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    
+}
+.gueslandingPage .logo2links a{
+    margin: 40px 0px;
+    font-family: "Akaya Kanadaka", system-ui;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.gueslandingPage .logo2socials{
+    /* border: 1px solid red; */
+    
+    
+}
+.gueslandingPage .logo2socials p{
+margin-bottom: 30px;
+font-family: "Akaya Kanadaka", system-ui;
+color: white;
+
+}
+
+.gueslandingPage .logo2socials a{
+   margin: 20px ;
+   color: white;
+}
+
+.copyright{
+    /* border: 1px solid red; */
+    margin: 70px 0px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.copyright p{
+ color: white;
+}
+.copyright div{
+border-top: 2px solid white;
+width: 35%;
+}
+
+.comicContainer{
+    background-image: url("./IMAGES/Maskgroup.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 10px;
+    background-color: #fb1a1a;
+    color: #f5f5f5;
+    text-transform: capitalize;
+    /* background-clip: content-box;
+    -webkit-background-clip: content-box; */
+    /* display: inline-block; */
+    height: 152px;
+    width: 389px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+
