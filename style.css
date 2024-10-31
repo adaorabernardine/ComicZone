@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-weight: 400;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbarGlobalContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  height: 100px;
+  position: sticky;
+  color: red;
+}
+
+
+
+ .allGlobalcontainer {
+  background-color: #ffb901;
+  position: relative;
+  z-index: 20; /* Stays below .heroContainer */
+}
+
+ .heroContainer {
+  position: relative;
+  z-index: 10;
+  background-image: url("IMAGES/heroContainerBackground.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(100vh - 80px);
+  padding: 30px;
+}
+
+
+.heroContainerInner{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+
+.heroTextContainer{
+  /* border: 1px solid red; */
+  width: 50%;
+  font-size: 80px;
+  font-weight: 900;
+  /* margin: 0px auto; */
+  color: white;
+  text-align: center;
+}
+
+
+.logincontainer{
+  /* border: 1px solid blue; */
+  background-color:#fdf5b6;
+  width: 50%;
+  padding:30px;
+  height:75vh;
+}
+
+.loginGlobal{
+  /* border: 1px solid red; */
+  background-color: white;
+  padding: 20px;
+  
+  
+  
+}
+.loginGlobal .label .password{
+  /* border: 1px solid red; */
+  padding: 15px;
+  margin: 10px auto;
+}
+input[type="text"]{
+padding: 10px;
+border-radius: 5px;
+width: 100%;
+outline: none;
+/* border: none; */
+background-color: #f2f2f2;
+border: transparent;
+}
+
+.loginGlobal .label .email{
+  /* border: 1px solid red; */
+padding: 15px;
+margin: 10px auto;
+}
+.signuplink{
+  /* border: 1PX SOLID RED; */
+  padding: 10px;
+  border-radius: 10px;
+  background-color: red;
+  text-align: center;
+  width: 95%;
+  /* display: ; */
+  margin: 0px auto;
+}
+.signuplink a{
+  text-decoration: none;
+  color: white;
+
+}
+
+.PasswordContainer{
+  /* border: 1px solid red; */
+  display: flex;
+  margin: 120px 0px 10px 0px;
+  justify-content: space-between;
+}
+.PasswordContainer .mini {
+  display: flex;
+}
+.PasswordContainer .mini .mini1 a {
+  text-decoration: none;
+  
+}
+.PasswordContainer .mini .mini2 a {
+  text-decoration: none;
+  color: red;
+  
+}
+.forgot a{
+  text-decoration: none;
+  color: red;
+}
